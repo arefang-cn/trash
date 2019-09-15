@@ -66,7 +66,8 @@
     // detect objects in the image.
            model.detect(cImage).then(predictions => {
              console.log('Predictions: ', predictions);
-             
+             resList.innerHTML="识别到"+predictions.length+"个目标";        	
+             	
              });
 				//	cocoSsd.load().then(function(e1){e1.detect(cImage).then(function(e1){console.timeEnd()})
 				})
